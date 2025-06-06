@@ -1,0 +1,11 @@
+services:
+- type: web
+  name: fastapi-uv
+  runtime: python
+  repo: https://github.com/render-examples/fastapi-uv
+  plan: starter
+  region: ohio
+  buildCommand: ./install.sh
+  startCommand: ./run.sh
+  autoDeployTrigger: commit
+version: "1"
